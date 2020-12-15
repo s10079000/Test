@@ -1,0 +1,46 @@
+
+
+hr 帳戶UNLOCK:
+==================================================
+1.  於命令提示字元:
+        輸入    sqlplus "/as sysdba"
+        或輸入  sqlplus
+    以進入 SQL 命令視窗 
+
+
+2.  帳戶UNLOCK:
+     SQL> ALTER USER hr ACCOUNT UNLOCK; 
+
+
+3.  帳戶修改密碼:
+     SQL> ALTER USER hr IDENTIFIED BY 123456;
+=================================================
+
+
+
+
+
+其它指令
+=================================================
+於命令提示字元:
+  輸入    sqlplus "/as sysdba"
+  或輸入  sqlplus
+以進入 SQL 命令視窗  
+
+起動資料庫
+SQL> startup
+
+帳戶LOCK:
+SQL> ALTER USER hr ACCOUNT LOCK;
+
+帳戶UNLOCK:
+SQL> ALTER USER hr ACCOUNT UNLOCK;
+
+帳戶修改密碼:
+SQL> ALTER USER hr IDENTIFIED BY 123456;
+
+帳戶登入:
+SQL> conn hr/tiger;
+SQL> connect hr/tiger;
+SQL> select * from emp2;
+==================================================
